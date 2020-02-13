@@ -33,4 +33,4 @@ conda env create -f env.yml
 ## Datasets
 
 Communities in `*.cmty.txt` have been randomly shuffled.
-So the first 450 are training communities, the following 50 are validation communities, and the remaining are test set.
+So the first 450 are training communities, the following 50 are validation communities, and the remaining is the test set.
