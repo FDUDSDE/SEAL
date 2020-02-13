@@ -28,3 +28,9 @@ You could install all dependencies with `conda`:
 ```
 conda env create -f env.yml
 ```
+
+
+## Datasets
+
+Communities in `*.cmty.txt` have been randomly shuffled.
+So the first 450 are training communities, the following 50 are validation communities, and the reamining are test set.
