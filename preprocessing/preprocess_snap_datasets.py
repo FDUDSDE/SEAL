@@ -210,6 +210,7 @@ def process_snap(name, p=95, data_folder='raw_data', seed=42):
     # 1-ego
     info_str += '=' * 20 + '\n'
     info_str += f'[{name}-1: subgraph with nodes in comms\' 1-ego net]\n'
+    nodes_in_comms = {i for c in comms for i in c}
     nodes_in_ego1 = graph.k_ego(nodes_in_comms, 1)
     sub_edges, sub_comms, sub_nf, _ = extract_subdataset(edges, comms, nodes_in_ego1, nodefeats)
     save_dataset(sub_edges, sub_comms, f'{name}-1.{p}', data_folder, sub_nf)
